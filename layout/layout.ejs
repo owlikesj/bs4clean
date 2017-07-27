@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'en' %>">
+<!-- Head tag -->
+<%- partial('_partial/head') %>
+<body>
+	<!-- Menu -->
+	<%- partial('_partial/menu') %>
+	<!-- Main Content -->
+	<main><%- body %></main>
+	<!-- Footer -->
+	<%- partial('_partial/footer') %>
+	<!-- After footer scripts -->
+	<%- partial('_partial/after-footer') %>
+</body>
+</html>
