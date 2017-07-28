@@ -1,1 +1,25 @@
-<footer></footer>
+<hr>
+<!-- Footer -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+				<ul class="list-inline text-center">
+					<% for (var i in theme.social_accounts) { %>
+						<li class="list-inline-item">
+							<a href="<%- url_for(theme.social_accounts[i]) %>">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-<%= i %> fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					<% } %>
+				</ul>
+				<p class="copyright text-muted">Copyright &copy; <%= config.author || config.title %> <%= date(new Date(), 'YYYY') %><br></p>
+				<p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+				<p class="copyright text-muted"><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+			</div>
+		</div>
+	</div>
+</footer>

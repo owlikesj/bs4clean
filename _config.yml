@@ -10,3 +10,11 @@ menu:
 
 # Title on top left of menu
 menu_title: OwlikBlog
+
+# URL of the Home page image
+index_cover: img/home-bg.jpg
+
+# Social Accounts
+social_accounts:
+	weibo: http://weibo.com/p/1005052903396770
+	github: https://github.com/owlikesj
