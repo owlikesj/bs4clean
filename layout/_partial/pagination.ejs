@@ -1,0 +1,9 @@
+<!-- Pager -->
+<div class="clearfix">
+	<% if (page.prev) { %>
+		<a class="btn btn-secondary" href="<%- config.root %><%- page.prev_link %>">&larr; <%- __('prev') %></a>
+	<% } %>
+  <% if (page.next) { %>
+		<a class="btn btn-secondary float-right" href="<%- config.root %><%- page.next_link %>"><%- __('next') %> &rarr;</a>
+	<% } %>
+</div>

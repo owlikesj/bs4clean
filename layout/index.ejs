@@ -11,4 +11,14 @@
 		</div>
 	</div>
 </header>
-<div></div>
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+			<% page.posts.each(function(item) { %>
+				<%- partial('_partial/post-preview', {item: item}) %>
+			<% }) %>
+			<%- partial('_partial/pagination') %>
+		</div>
+	</div>
+</div>
