@@ -28,6 +28,23 @@
 <article>
 	<div class="container">
 		<div class="row">
+			<!-- Tags and categories -->
+			<% if (page.categories && page.categories.length || page.tags && page.tags.length) { %>
+				<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 post-tags">
+					<% if (page.tags && page.tags.length){ %>
+						<%- partial('_partial/post-tags', {item: page}) %>
+					<% } else { %>
+						<%- partial('_partial/post-categories', {item: page}) %>
+					<% } %>
+				</div>
+				<div class="col-lg-4 col-md-5 post-categories">
+					<% if (page.tags && page.tags.length && page.categories && page.categories.length){ %>
+						<%- partial('_partial/post-categories', {item: page}) %>
+					<% } %>
+				</div>
+			<% } %>
+
+			<!-- Post Main Content -->
 			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 				<%- page.content %>
 			</div>
