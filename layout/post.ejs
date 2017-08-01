@@ -63,6 +63,13 @@
 			<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
 				<%- page.content %>
 			</div>
+
+			<!-- Comments -->
+			<% if (page.comments) { %>
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+					<%- partial("_partial/comments.ejs") %>
+				</div>
+			<% } %>
 		</div>
 	</div>
 </article>

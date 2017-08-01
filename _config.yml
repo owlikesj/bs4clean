@@ -14,6 +14,9 @@ menu_title: OwlikBlog
 # URL of the Home page image
 index_cover: img/home-bg.jpg
 
+# Disqus Comments Shortname
+disqus_shortname: owlikesj
+
 # Social Accounts
 social_accounts:
 	weibo: http://weibo.com/p/1005052903396770
