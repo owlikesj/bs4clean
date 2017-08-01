@@ -17,6 +17,9 @@ index_cover: img/home-bg.jpg
 # Disqus Comments Shortname
 disqus_shortname: owlikesj
 
+# Miscellaneous
+google_analytics: UA-103068178-1
+
 # Social Accounts
 social_accounts:
 	weibo: http://weibo.com/p/1005052903396770
